@@ -1,88 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>ALLICYA</title>
+  <meta charset="UTF-8" />
+  <title>ALLICYA 💖</title>
   <style>
     body {
       background-color: #ffc4ec;
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
       color: #d81cae;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    #unlock {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #ffc4ec;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5rem;
     }
-    #unlock button {
-      padding: 15px 30px;
-      font-size: 18px;
-      background-color: #d81cae;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      box-shadow: 0 0 15px #d81cae;
+    iframe {
+      margin-top: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #d81cae;
     }
-    #siteContent {
-      display: none;
+    .photos {
+      margin: 40px 0;
     }
     .photos img {
       width: 200px;
+      border-radius: 20px;
       margin: 10px;
-      border-radius: 15px;
       box-shadow: 0 0 10px #d81cae;
     }
     .message {
       font-size: 1.2rem;
-      margin: 40px auto;
+      margin: 20px auto;
       max-width: 600px;
+    }
+    .cat {
+      font-size: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <div id="unlock">
-    <h2>🌸 Clique para começar 🌸</h2>
-    <button onclick="startSite()">▶️ Tocar música</button>
+  <h1>ALLICYA 💖</h1>
+
+  <!-- YouTube embed player -->
+  <iframe width="300" height="170" 
+    src="https://www.youtube.com/embed/JFhiu5k8z90?si=F95XNKEK3qBOrLLt"
+    title="Clara La San - Want U"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+
+  <div class="message">
+    <p>Desde o primeiro momento que te vi, senti algo diferente… como se meu coração já soubesse quem você era. 💕</p>
+    <p>Você é o brilho que faltava no meu universo. Te ver sorrir é minha paz. 😽✨</p>
+    <p class="cat">🐾💗🐱💗🐾</p>
   </div>
 
-  <audio id="myAudio" loop>
-    <source src="https://reeis7.github.io/ALLICYA/Clara%20La%20San%20-%20Want%20U.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio 😿
-  </audio>
-
-  <div id="siteContent">
-    <h1>ALLICYA 💖</h1>
-    <div class="photos">
-      <!-- Suas fotos aqui -->
-    </div>
-    <div class="message">
-      <!-- Sua mensagem aqui -->
-    </div>
+  <div class="photos">
+    <img src="https://ik.imagekit.io/y6oz2j7mx/25a3718c-2386-4274-b6ef-eaa714998615.jpg?updatedAt=1747700644325" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/C%C3%B3pia%20de%20IMG_3447.HEIC?updatedAt=1747700644237" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/A3561E45-86B5-4B60-A93C-ED01E3FDDFC6.jpg?updatedAt=1747700643617" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/15B0571D-5EC5-4C51-85C6-1805AA8F57E8.jpg?updatedAt=1747700642739" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/IMG_2956.JPG?updatedAt=1747700642431" />
   </div>
-
-  <script>
-    function startSite() {
-      const audio = document.getElementById("myAudio");
-      audio.play().then(() => {
-        document.getElementById("unlock").style.display = "none";
-        document.getElementById("siteContent").style.display = "block";
-      }).catch((err) => {
-        alert("Erro ao iniciar o áudio. Tente novamente.");
-        console.error(err);
-      });
-    }
-  </script>
 
 </body>
 </html>
