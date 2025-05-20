@@ -3,33 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sessão de Fotos com Música - Slideshow</title>
+  <title>Sessão Fofinha 💖🐱</title>
   <style>
     body {
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
+      background: #ffe6f0;
+      color: #d63384;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       margin: 0;
-      padding: 20px;
-      text-align: center;
+      padding: 30px;
     }
     h1 {
-      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
     }
     .slideshow-container {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 350px;
       position: relative;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+      border-radius: 15px;
+      box-shadow: 0 0 20px #ffb6c1;
       overflow: hidden;
-      background: #222;
+      background: white;
     }
     .slide {
       display: none;
       width: 100%;
       height: auto;
-      border-radius: 10px;
     }
     .active {
       display: block;
@@ -39,21 +45,49 @@
       from {opacity: 0;}
       to {opacity: 1;}
     }
+    .mensagem {
+      max-width: 400px;
+      background: #fff0f5;
+      border: 2px dashed #ff69b4;
+      border-radius: 15px;
+      padding: 20px;
+      font-size: 1.2em;
+      line-height: 1.6;
+      box-shadow: 0 0 15px #ffb6c1;
+    }
+    .mensagem::before {
+      content: "🐾💌";
+      font-size: 2em;
+      display: block;
+      margin-bottom: 10px;
+    }
+    iframe {
+      display: none;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Sessão de Fotos com Música</h1>
+  <h1>💖 Momentos Mágicos com um Toque de Gatinho 🐱</h1>
 
-  <div class="slideshow-container">
-    <img class="slide active" src="https://ik.imagekit.io/y6oz2j7mx/25a3718c-2386-4274-b6ef-eaa714998615.jpg?updatedAt=1747700644325" alt="Foto 1" />
-    <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/C%C3%B3pia%20de%20IMG_3447.HEIC?updatedAt=1747700644237" alt="Foto 2" />
-    <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/A3561E45-86B5-4B60-A93C-ED01E3FDDFC6.jpg?updatedAt=1747700643617" alt="Foto 3" />
-    <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/15B0571D-5EC5-4C51-85C6-1805AA8F57E8.jpg?updatedAt=1747700642739" alt="Foto 4" />
-    <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/IMG_2956.JPG?updatedAt=1747700642431" alt="Foto 5" />
+  <div class="container">
+    <div class="slideshow-container">
+      <img class="slide active" src="https://ik.imagekit.io/y6oz2j7mx/25a3718c-2386-4274-b6ef-eaa714998615.jpg?updatedAt=1747700644325" alt="Foto 1" />
+      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/C%C3%B3pia%20de%20IMG_3447.HEIC?updatedAt=1747700644237" alt="Foto 2" />
+      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/A3561E45-86B5-4B60-A93C-ED01E3FDDFC6.jpg?updatedAt=1747700643617" alt="Foto 3" />
+      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/15B0571D-5EC5-4C51-85C6-1805AA8F57E8.jpg?updatedAt=1747700642739" alt="Foto 4" />
+      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/IMG_2956.JPG?updatedAt=1747700642431" alt="Foto 5" />
+    </div>
+
+    <div class="mensagem">
+      Desde que te vi, tudo ficou mais leve. <br />
+      Você é como um gatinho no meu peito, miando carinho em silêncio. <br />
+      Cada foto aqui é uma lembrança do quanto me faz bem. 💞 <br />
+      Que essa vibe fofa fique entre a gente pra sempre! 🐱💖
+    </div>
   </div>
 
-  <!-- Player YouTube invisível tocando a música em loop -->
+  <!-- Música de fundo invisível do YouTube -->
   <iframe width="0" height="0" src="https://www.youtube.com/embed/JFhiu5k8z90?autoplay=1&loop=1&playlist=JFhiu5k8z90" frameborder="0" allow="autoplay"></iframe>
 
   <script>
@@ -66,7 +100,7 @@
       slides[slideIndex].classList.add('active');
     }
 
-    setInterval(showNextSlide, 3000); // troca a foto a cada 3 segundos
+    setInterval(showNextSlide, 3000);
   </script>
 
 </body>
