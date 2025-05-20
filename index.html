@@ -3,117 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sessao LoveLy 💖🐱</title>
+  <title>Declaração com Música e Fotos</title>
   <style>
     body {
-      background: #ffe6f0;
-      color: #d63384;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      margin: 0;
-      padding: 30px;
-    }
-    h1 {
+      background-color: #ffb6db; /* rosa clarinho */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #d81cae; /* rosa forte */
       text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 30px;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 30px;
-    }
-    .slideshow-container {
-      max-width: 350px;
-      position: relative;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #ffb6c1;
-      overflow: hidden;
-      background: white;
-    }
-    .slide {
-      display: none;
-      width: 100%;
-      height: auto;
-    }
-    .active {
-      display: block;
-      animation: fadeIn 1s;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    .mensagem {
-      max-width: 400px;
-      background: #fff0f5;
-      border: 2px dashed #ff69b4;
-      border-radius: 15px;
       padding: 20px;
-      font-size: 1.2em;
-      line-height: 1.6;
-      box-shadow: 0 0 15px #ffb6c1;
     }
-    .mensagem::before {
-      content: "🐾💌";
-      font-size: 2em;
-      display: block;
-      margin-bottom: 10px;
-    }
-    iframe {
+    #content {
       display: none;
+      margin-top: 20px;
+    }
+    .photos img {
+      width: 200px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #d81cae;
+    }
+    /* Decoração de gatinhos no fundo (só como exemplo) */
+    body::before {
+      content: '🐱🐾';
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 2rem;
+      opacity: 0.2;
+      user-select: none;
+    }
+    button {
+      background-color: #d81cae;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 0 15px #d81cae;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #b1158a;
     }
   </style>
 </head>
 <body>
 
-  <h1>💖 Sessao LoveLy 🐱</h1>
+  <h1>Minha Declaração Especial</h1>
 
-  <div class="container">
-    <div class="slideshow-container">
-      <img class="slide active" src="https://ik.imagekit.io/y6oz2j7mx/25a3718c-2386-4274-b6ef-eaa714998615.jpg?updatedAt=1747700644325" alt="Foto 1" />
-      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/C%C3%B3pia%20de%20IMG_3447.HEIC?updatedAt=1747700644237" alt="Foto 2" />
-      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/A3561E45-86B5-4B60-A93C-ED01E3FDDFC6.jpg?updatedAt=1747700643617" alt="Foto 3" />
-      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/15B0571D-5EC5-4C51-85C6-1805AA8F57E8.jpg?updatedAt=1747700642739" alt="Foto 4" />
-      <img class="slide" src="https://ik.imagekit.io/y6oz2j7mx/IMG_2956.JPG?updatedAt=1747700642431" alt="Foto 5" />
-    </div>
+  <button id="playBtn">▶️ Tocar Música e Ver Fotos</button>
 
-    <div class="mensagem">
-      Desde que te vi, tudo ficou mais leve. <br />
-      Obrigado por tudo. <br />
-      Cada foto aqui é uma lembrança do quanto você me faz bem. 💞 <br />
-      Quero você pra todo sempre! 🐱💖
+  <div id="content">
+    <div class="photos">
+      <img src="https://ik.imagekit.io/y6oz2j7mx/25a3718c-2386-4274-b6ef-eaa714998615.jpg?updatedAt=1747700644325" alt="Foto 1" />
+      <img src="https://ik.imagekit.io/y6oz2j7mx/C%C3%B3pia%20de%20IMG_3447.HEIC?updatedAt=1747700644237" alt="Foto 2" />
+      <img src="https://ik.imagekit.io/y6oz2j7mx/A3561E45-86B5-4B60-A93C-ED01E3FDDFC6.jpg?updatedAt=1747700643617" alt="Foto 3" />
+      <img src="https://ik.imagekit.io/y6oz2j7mx/15B0571D-5EC5-4C51-85C6-1805AA8F57E8.jpg?updatedAt=1747700642739" alt="Foto 4" />
+      <img src="https://ik.imagekit.io/y6oz2j7mx/IMG_2956.JPG?updatedAt=1747700642431" alt="Foto 5" />
     </div>
+    <p style="margin-top: 20px; font-size: 1.2rem; max-width: 600px; margin-left:auto; margin-right:auto;">
+      Essa música e essas fotos são para você, com todo meu carinho e amor. Que elas tragam um sorriso e aqueçam seu coração sempre que ouvir e olhar.
+    </p>
   </div>
 
-  <!-- Música de fundo invisível do YouTube -->
-  <iframe width="0" height="0" src="https://www.youtube.com/embed/JFhiu5k8z90?autoplay=1&loop=1&playlist=JFhiu5k8z90" frameborder="0" allow="autoplay"></iframe>
+  <audio id="myAudio" loop>
+    <source src="https://reeis7.github.io/ALLICYA/Clara%20La%20San%20-%20Want%20U%20(Lyric%20Video)%20(1)%20(1).mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio 😿
+  </audio>
 
   <script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
+    const playBtn = document.getElementById('playBtn');
+    const content = document.getElementById('content');
+    const audio = document.getElementById('myAudio');
 
-    function showNextSlide() {
-      slides[slideIndex].classList.remove('active');
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add('active');
-    }
-
-    setInterval(showNextSlide, 3000);
+    playBtn.addEventListener('click', () => {
+      audio.play().then(() => {
+        // Se a música começar a tocar, mostramos o conteúdo
+        content.style.display = 'block';
+        playBtn.style.display = 'none';
+      }).catch(error => {
+        alert('Não foi possível tocar a música. Tente novamente.');
+        console.error(error);
+      });
+    });
   </script>
-  <iframe
-  width="0"
-  height="0"
-  src="https://www.youtube.com/embed/JFhiu5k8z90?autoplay=1&loop=1&playlist=JFhiu5k8z90&mute=1"
-  frameborder="0"
-  allow="autoplay"
-></iframe>
-
 
 </body>
 </html>
-<audio autoplay loop>
-  <source src="Clara La San - Want U (Lyric Video) (1) (1).mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio 😿
-</audio>
