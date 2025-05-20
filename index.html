@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sessão de Fotos com Música</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      height: auto;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      display: none; /* esconder o player do YouTube */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sessão de Fotos</h1>
+
+  <div class="gallery">
+    <img src="https://ik.imagekit.io/y6oz2j7mx/25a3718c-2386-4274-b6ef-eaa714998615.jpg?updatedAt=1747700644325" alt="Foto 1" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/C%C3%B3pia%20de%20IMG_3447.HEIC?updatedAt=1747700644237" alt="Foto 2" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/A3561E45-86B5-4B60-A93C-ED01E3FDDFC6.jpg?updatedAt=1747700643617" alt="Foto 3" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/15B0571D-5EC5-4C51-85C6-1805AA8F57E8.jpg?updatedAt=1747700642739" alt="Foto 4" />
+    <img src="https://ik.imagekit.io/y6oz2j7mx/IMG_2956.JPG?updatedAt=1747700642431" alt="Foto 5" />
+  </div>
+
+  <!-- Player YouTube invisível tocando a música em loop -->
+  <iframe width="0" height="0" src="https://www.youtube.com/embed/JFhiu5k8z90?autoplay=1&loop=1&playlist=JFhiu5k8z90" frameborder="0" allow=
